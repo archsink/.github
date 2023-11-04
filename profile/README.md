@@ -10,3 +10,13 @@ An [unofficial package repository](https://wiki.archlinux.org/title/unofficial_u
 | [pentium4](https://github.com/archsink/pentium4) | [![Release](https://img.shields.io/github/v/release/archsink/pentium4)](https://github.com/archsink/pentium4/releases/latest) | [![Build](https://github.com/archsink/pentium4/actions/workflows/build.yml/badge.svg)](https://github.com/archsink/pentium4/actions/workflows/build.yml) |
 | [riscv64](https://github.com/archsink/riscv64) | [![Release](https://img.shields.io/github/v/release/archsink/riscv64)](https://github.com/archsink/riscv64/releases/latest) | [![Build](https://github.com/archsink/riscv64/actions/workflows/build.yml/badge.svg)](https://github.com/archsink/riscv64/actions/workflows/build.yml) |
 | [powerpc64le](https://github.com/archsink/powerpc64le) | [![Release](https://img.shields.io/github/v/release/archsink/powerpc64le)](https://github.com/archsink/powerpc64le/releases/latest) | [![Build](https://github.com/archsink/powerpc64le/actions/workflows/build.yml/badge.svg)](https://github.com/archsink/powerpc64le/actions/workflows/build.yml) |
+
+## Usage
+
+Add the following to your `/etc/pacman.conf`:
+
+```
+[archsink]
+Server = https://github.com/archsink/$arch/releases/latest/download
+SigLevel = Never
+```
